@@ -10,7 +10,9 @@ aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t2.micro
 #The following example adds an Amazon EBS volume, mapped to /dev/sdf, based on an existing snapshot. A snapshot represents an image that is loaded onto the volume for you.
 #--block-device-mappings "[{\"DeviceName\":\"/dev/sdf\",\"Ebs\":{\"SnapshotId\":\"snap-a1b2c3d4\"}}]"
 
+#Add a tag to your instance
 aws ec2 create-tags --resources i-5203422c --tags Key=Name,Value=MyInstance
+
 aws ec2 describe-instances --filters "Name=instance-type,Values=t2.micro" --query "Reservations[].Instances[].InstanceId"
 aws ec2 describe-instances --filters "Name=tag:Name,Values=MyInstance"
 aws ec2 describe-instances --filters "Name=image-id,Values=ami-x0123456,ami-y0123456,ami-z0123456"
