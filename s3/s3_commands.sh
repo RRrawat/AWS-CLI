@@ -6,3 +6,6 @@ aws s3 ls <target> [--options]
 
 #Delete buckets
 aws s3 rb <target> [--options]
+
+#Delete objects in bucket
+aws s3 rm  <target> [--options]
