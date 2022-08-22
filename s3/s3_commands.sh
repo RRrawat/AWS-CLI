@@ -13,3 +13,6 @@ aws s3 rm  <target> [--options]
 
 #Move objects
 aws s3 mv <source> <target> [--options]
+
+#Copy objects
+aws s3 cp <source> <target> [--options]
