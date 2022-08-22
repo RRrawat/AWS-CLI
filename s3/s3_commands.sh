@@ -22,3 +22,6 @@ aws s3 cp - <target> [--options]
 
 #The s3 cp command uses the following syntax to download an Amazon S3 file stream for stdout.
 aws s3 cp <target> [--options] -
+
+#Sync objects
+$ aws s3 sync <source> <target> [--options]
