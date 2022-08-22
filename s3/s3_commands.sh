@@ -10,7 +10,6 @@ aws s3 rb <target> [--options]
 #Delete objects in bucket
 aws s3 rm  <target> [--options]
 
-
 #Move objects
 aws s3 mv <source> <target> [--options]
 
