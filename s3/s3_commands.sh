@@ -24,4 +24,4 @@ aws s3 cp - <target> [--options]
 aws s3 cp <target> [--options] -
 
 #Sync objects
-$ aws s3 sync <source> <target> [--options]
+aws s3 sync <source> <target> [--options]
